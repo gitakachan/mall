@@ -73,15 +73,19 @@ export default {
   background-color: rgb(230, 230, 230);
 
   .tab-bar-item {
-    display: flex;
     flex: 1;
-    flex-direction: column;
-    align-items: center;
-  }
+    padding: 0 5%;
 
-  img {
-    width: 40%;
-    padding: 5%;
+    .img {
+      height: 80%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        padding: 5px;
+      }
+    }
   }
 }
 </style>

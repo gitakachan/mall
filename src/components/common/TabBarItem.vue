@@ -1,12 +1,12 @@
 <template>
   <div class="tab-bar-item" @click="itemClick">
-    <div v-if="!isActive">
+    <div class="img" v-if="!isActive">
       <slot name="img"> </slot>
     </div>
-    <div v-else>
+    <div class="img" v-else>
       <slot name="imgActive"> </slot>
     </div>
-    <div :style="activeStyle">
+    <div class="title" :style="activeStyle">
       <slot name="title"></slot>
     </div>
   </div>
