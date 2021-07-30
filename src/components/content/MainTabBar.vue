@@ -48,8 +48,8 @@
   </tab-bar>
 </template>
 <script>
-import TabBarItem from "../common/TabBarItem";
-import TabBar from "../common/TabBar";
+import TabBarItem from "../common/tabBar/TabBarItem";
+import TabBar from "../common/tabBar/TabBar";
 
 export default {
   name: "MainTabBar",
@@ -68,23 +68,33 @@ export default {
   bottom: 0;
   left: 0;
   right: 0;
+  height: 13vh;
+  max-height: 80px;
   display: flex;
   text-align: center;
-  background-color: rgb(230, 230, 230);
+  background-color: rgb(240, 240, 240);
+  box-shadow: 0 1px 7px rgb(138, 138, 138);
 
   .tab-bar-item {
     flex: 1;
-    padding: 0 5%;
+    padding: 1% 5%;
+    display: flex;
+    flex-direction: column;
 
     .img {
-      height: 80%;
-
+      height: 60%;
       img {
         width: 100%;
         height: 100%;
         object-fit: contain;
-        padding: 5px;
+        padding: 2%;
       }
+    }
+    .title {
+      height: 40%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 }
