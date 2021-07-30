@@ -77,7 +77,7 @@ export default {
 
   .tab-bar-item {
     flex: 1;
-    padding: 1% 5%;
+    padding: 1% 3%;
     display: flex;
     flex-direction: column;
 
@@ -92,9 +92,6 @@ export default {
     }
     .title {
       height: 40%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
     }
   }
 }
