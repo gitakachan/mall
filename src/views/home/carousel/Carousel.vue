@@ -4,8 +4,8 @@
       cycle
       v-model="model"
       class="container"
-      height="auto"
       :show-arrows="isHover"
+      height="auto"
       hide-delimiters
     >
       <v-carousel-item v-for="item in banner" :key="item.title">
