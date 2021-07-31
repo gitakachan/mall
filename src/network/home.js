@@ -2,8 +2,20 @@
 
 import { request } from "./request";
 
+//banner and recommend
 export function getHomeMultidata() {
   return request({
     url: "/home/multidata",
+  });
+}
+
+//products
+export function getProductsData(type, page) {
+  return request({
+    url: "/home/data",
+    params: {
+      type,
+      page,
+    },
   });
 }
