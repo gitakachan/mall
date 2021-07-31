@@ -3,7 +3,7 @@
     <div class="img">
       <slot name="img"></slot>
     </div>
-    <div class="title">
+    <div class="recommend-title">
       <slot name="title"></slot>
     </div>
   </div>
@@ -25,7 +25,7 @@ export default {
   text-align: center;
 
   img {
-    width: 90%;
+    width: 80%;
   }
 }
 </style>

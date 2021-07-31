@@ -1,5 +1,5 @@
 <template>
-  <div class="main" >
+  <div class="main">
     <tab-bar>
       <template v-slot:items>
         <tab-bar-item path="/home" active-color="#f40">
@@ -77,29 +77,6 @@ export default {
     text-align: center;
     background-color: rgb(240, 240, 240);
     box-shadow: 0 1px 7px rgb(138, 138, 138);
-
-    .tab-bar-item {
-      flex: 1;
-      padding: 1% 3%;
-      display: flex;
-      flex-direction: column;
-
-      .img {
-        height: 60%;
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: contain;
-          padding: 2%;
-        }
-      }
-      .title {
-        height: 40%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-    }
   }
 }
 </style>

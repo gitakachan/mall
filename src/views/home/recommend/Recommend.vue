@@ -33,6 +33,7 @@ export default {
   display: flex;
   a {
     flex: 1;
+    color: #000;
   }
 }
 </style>

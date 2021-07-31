@@ -20,6 +20,7 @@ export default {
   line-height: 8vh;
   text-align: center;
   box-shadow: 0 1px 7px #ccc;
+  font-size: 1.5rem;
 
   .left {
     width: 20%;

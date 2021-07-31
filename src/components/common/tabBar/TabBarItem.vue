@@ -6,7 +6,7 @@
     <div class="img" v-else>
       <slot name="imgActive"> </slot>
     </div>
-    <div class="title" :style="activeStyle">
+    <div class="item-title" :style="activeStyle">
       <slot name="title"></slot>
     </div>
   </div>
@@ -45,4 +45,28 @@ export default {
   },
 };
 </script>
-<style lang="scss"></style>
+<style lang="scss" scoped>
+.tab-bar-item {
+  flex: 1;
+  padding: 1% 3%;
+  display: flex;
+  flex-direction: column;
+
+  .img {
+    height: 60%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      margin-bottom: 2%;
+    }
+  }
+  .item-title {
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+  }
+}
+</style>
